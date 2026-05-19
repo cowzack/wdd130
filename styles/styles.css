@@ -1,6 +1,21 @@
 /* Main content */
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
 main {
     max-width: 840px;
+}
+
+h1 {
+    color: steelblue;
 }
 
 /* Aside section */
@@ -24,6 +39,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 /* Paragraph styling */
