@@ -1,4 +1,3 @@
-/* CSS Variables */
 :root {
     --primary-color: #0b4f6c;
     --secondary-color: #01baef;
@@ -9,20 +8,17 @@
     --body-font: Verdana, sans-serif;
 }
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* Page Width */
 header,
 main,
 footer {
@@ -30,14 +26,12 @@ footer {
     margin: 0 auto;
 }
 
-/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* Spacing */
 nav,
 p,
 section,
@@ -46,33 +40,30 @@ article {
     padding: 8px;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: var(--secondary-color);
 }
 
-/* Navigation */
 nav a {
     text-decoration: none;
     margin-right: 15px;
     color: var(--primary-color);
 }
 
-/* Hero Section */
 .hero {
     position: relative;
 }
 
-/* Hero Image */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Hero Heading */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -86,7 +77,6 @@ nav a {
     opacity: 0.8;
 }
 
-/* Hero Article */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -96,7 +86,6 @@ nav a {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Article Image */
 .hero article img {
     float: right;
     width: 125px;
@@ -104,18 +93,17 @@ nav a {
     border: 2px solid var(--primary-color);
 }
 
-/* Footer */
 footer {
     margin-top: 20px;
     text-align: center;
+
+    background-color: var(--accent2-color);
 }
 
-/* Social Media */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* Social Icons */
 .socialmedia img {
     width: 30px;
 }
