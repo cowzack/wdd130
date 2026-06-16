@@ -216,7 +216,7 @@ footer {
     resize: vertical;
 }
 
-/* ================= FIELDSET (RADIO FIX) ================= */
+/* ================= FIELDSET ================= */
 
 .contact-form fieldset {
     border: 1px solid #ccc;
@@ -227,7 +227,6 @@ footer {
     gap: 10px;
 }
 
-/* RADIO ALIGNMENT FIX */
 .radio-option {
     display: flex;
     align-items: center;
