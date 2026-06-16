@@ -51,8 +51,8 @@
                 <div class="map">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5753.201678066103!2d-109.42218398264778!3d45.53604878256389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1781068554545!5m2!1sen!2sph"
-                      width="600" height="450" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade">
+                      width="600" height="450" title="White Water Rafting Location Map"
+                      loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
                     </iframe>
                 </div>
             </section>
@@ -68,34 +68,28 @@
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label class="section-title">Purpose of Message</label>
+                    <p>Purpose of Message</p>
 
                     <fieldset>
 
-                        <label class="radio-option">
-                            <input type="radio" id="general-inquiry" name="purpose"
-                              value="general-inquiry" required>
-                            General Inquiry
-                        </label>
+                        <input type="radio" id="general-inquiry" name="purpose"
+                          value="general-inquiry" required>
+                        <label for="general-inquiry">General Inquiry</label>
 
-                        <label class="radio-option">
-                            <input type="radio" id="Reservation Question" name="purpose"
-                              value="reservation-question">
-                            Reservation Question
-                        </label>
+                        <input type="radio" id="reservation-question" name="purpose"
+                          value="reservation-question">
+                        <label for="reservation-question">Reservation Question</label>
 
-                        <label class="radio-option">
-                            <input type="radio" id="Website Suggestion" name="purpose"
-                              value="website-suggestion">
-                            Website Suggestion
-                        </label>
+                        <input type="radio" id="website-suggestion" name="purpose"
+                          value="website-suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
 
                     </fieldset>
 
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
 
-                    <label class="checkbox">
+                    <label for="newsletter">
                         <input type="checkbox" id="newsletter" name="newsletter">
                         Please subscribe me to the monthly newsletter
                     </label>
