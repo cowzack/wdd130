@@ -23,7 +23,8 @@ body {
     color: var(--accent1-color);
 }
 
-/* PAGE LAYOUT */
+/* ================= PAGE LAYOUT ================= */
+
 header,
 main,
 footer {
@@ -31,14 +32,16 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADINGS */
+/* ================= HEADINGS ================= */
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* PARAGRAPH */
+/* ================= PARAGRAPH ================= */
+
 p {
     margin: 16px 0;
 }
@@ -169,13 +172,11 @@ footer {
     margin: 2rem 0;
 }
 
-/* sections */
 .company-info,
 .contact-form {
     padding: 1rem;
 }
 
-/* headings */
 .company-info h2,
 .contact-form h2,
 .employees h2 {
@@ -183,7 +184,6 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* map */
 .map iframe {
     width: 100%;
     height: 350px;
@@ -198,12 +198,10 @@ footer {
     gap: 12px;
 }
 
-/* labels */
 .contact-form label {
     font-weight: 600;
 }
 
-/* inputs */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -214,45 +212,32 @@ footer {
     font: inherit;
 }
 
-/* textarea */
 .contact-form textarea {
     resize: vertical;
 }
 
-/* ================= FIELDSET ================= */
+/* ================= FIELDSET (RADIO FIX) ================= */
 
 .contact-form fieldset {
     border: 1px solid #ccc;
     padding: 0.8rem;
     margin: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* ================= RADIO ================= */
-
-.section-title {
-    font-weight: 600;
-    margin: 0;
-}
-
-.contact-form fieldset label {
+/* RADIO ALIGNMENT FIX */
+.radio-option {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: normal;
-    cursor: pointer;
-    white-space: nowrap;
 }
 
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
+.radio-option input[type="radio"] {
     width: 16px;
     height: 16px;
     margin: 0;
-    flex-shrink: 0;
 }
 
 /* ================= CHECKBOX ================= */

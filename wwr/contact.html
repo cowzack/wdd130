@@ -68,21 +68,27 @@
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required>
 
-                    <p>Purpose of Message</p>
+                    <label for="purpose">Purpose Message</label>
 
                     <fieldset>
 
-                        <input type="radio" id="general-inquiry" name="purpose"
-                          value="general-inquiry" required>
-                        <label for="general-inquiry">General Inquiry</label>
+                        <div class="radio-option">
+                            <input type="radio" id="general-inquiry" name="purpose"
+                              value="general-inquiry">
+                            <label for="general-inquiry">General Inquiry</label>
+                        </div>
 
-                        <input type="radio" id="reservation-question" name="purpose"
-                          value="reservation-question">
-                        <label for="reservation-question">Reservation Question</label>
+                        <div class="radio-option">
+                            <input type="radio" id="reservation-question" name="purpose"
+                              value="reservation-question">
+                            <label for="reservation-question">Reservation Question</label>
+                        </div>
 
-                        <input type="radio" id="website-suggestion" name="purpose"
-                          value="website-suggestion">
-                        <label for="website-suggestion">Website Suggestion</label>
+                        <div class="radio-option">
+                            <input type="radio" id="website-suggestion" name="purpose"
+                              value="website-suggestion">
+                            <label for="website-suggestion">Website Suggestion</label>
+                        </div>
 
                     </fieldset>
 
