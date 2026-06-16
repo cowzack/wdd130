@@ -19,6 +19,7 @@ body {
     color: var(--accent1-color);
 }
 
+/* PAGE LAYOUT */
 header,
 main,
 footer {
@@ -26,20 +27,19 @@ footer {
     margin: 0 auto;
 }
 
+/* HEADINGS */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+/* PARAGRAPH FIX (IMPORTANT) */
+p {
+    margin: 16px 0;
 }
 
-/* Header */
+/* ================= HEADER ================= */
 
 header {
     display: grid;
@@ -51,7 +51,6 @@ header {
 
 header img {
     width: 120px;
-    height: auto;
 }
 
 nav {
@@ -62,32 +61,30 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
     color: #05384d;
+    font-weight: bold;
 }
 
-/* Hero */
+/* ================= HERO ================= */
 
 .hero {
     position: relative;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
-    opacity: 0.8;
+    opacity: 0.85;
+    padding: 16px;
 }
 
 .hero article {
@@ -95,30 +92,29 @@ nav a {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 15px;
-    border: 2px solid var(--primary-color);
 }
 
-/* History */
+/* ================= HISTORY ================= */
 
 .history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
     gap: 10px;
+    align-items: center;
 }
 
 .history-content img {
     width: 100%;
 }
 
-/* Adventure Gallery */
+/* ================= GALLERY ================= */
 
 .gallery {
     display: flex;
@@ -134,17 +130,16 @@ nav a {
     width: 100%;
     height: 100px;
     object-fit: cover;
-    display: block;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--accent2-color);
     margin-top: 20px;
-    background-color: var(--accent2-color);
 }
 
 .socialmedia {
@@ -154,10 +149,9 @@ footer {
 
 .socialmedia img {
     width: 30px;
-    height: 30px;
 }
 
-/* Contact Page */
+/* ================= CONTACT PAGE ================= */
 
 .contact-hero {
     text-align: center;
@@ -169,7 +163,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 2rem 0;
-    align-items: start;
 }
 
 .company-info {
@@ -185,24 +178,28 @@ footer {
 
 .map iframe {
     width: 100%;
-    max-width: 600px;
     height: 350px;
     border: 1px solid #ccc;
 }
+
+/* ================= FORM ================= */
 
 .contact-form {
     padding: 1rem;
 }
 
 .contact-form form {
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.contact-form label {
+/* NORMAL LABELS */
+.contact-form form > label {
     font-weight: bold;
 }
 
+/* INPUTS */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -211,40 +208,66 @@ footer {
     border: 1px solid #999;
     border-radius: 4px;
     font: inherit;
-    box-sizing: border-box;
 }
 
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* PURPOSE TITLE OUTSIDE BOX */
+.section-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* FIELDSET (RADIO BOX) */
 .contact-form fieldset {
     border: 1px solid #ccc;
+    border-radius: 4px;
     padding: 1rem;
+    margin: 0;
 }
 
-.contact-form fieldset label {
-    display: block;
-    margin-bottom: 0.5rem;
+/* RADIO OPTIONS */
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
     font-weight: normal;
 }
 
+.radio-option input {
+    width: auto;
+}
+
+/* CHECKBOX */
 .checkbox {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
     font-weight: normal;
 }
 
+.checkbox input {
+    width: auto;
+}
+
+/* BUTTON */
 .contact-form button {
     padding: 0.75rem;
     background-color: #6b5fa8;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
     cursor: pointer;
 }
 
 .contact-form button:hover {
     background-color: #56488f;
 }
+
+/* ================= EMPLOYEES ================= */
 
 .employees {
     margin: 2rem 0;
@@ -258,19 +281,12 @@ footer {
     gap: 2rem;
 }
 
-.employee-grid figure {
-    margin: 0;
-}
-
 .employee-grid img {
     width: 150px;
-    height: auto;
     border-radius: 8px;
 }
 
-.employee-grid figcaption {
-    margin-top: 0.5rem;
-}
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
     .contact-layout {
